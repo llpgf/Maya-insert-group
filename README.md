@@ -33,7 +33,10 @@ Linux: ~/maya/2026/scripts/
 
 Load the Script in Maya:
 Open Maya 2026.
-In the Script Editor, run the following Python command:import insert_grp
+
+import importlib
+import insert_grp
+importlib.reload(insert_grp)
 insert_grp.main()
 
 
